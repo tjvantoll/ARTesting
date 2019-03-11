@@ -8,7 +8,9 @@
         planeMaterial="{{ planeMaterial }}"
         detectPlanes="true"
         showStatistics="true"
-        arLoaded="arLoaded">
+        planeTapped="onPlaneTapped"
+        arLoaded="onArLoaded"
+    >
     </AR:AR>
 
     <StackLayout row="1" horizontalAlignment="right" verticalAlignment="bottom">
