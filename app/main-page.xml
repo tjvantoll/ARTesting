@@ -1,23 +1,11 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page" xmlns:AR="nativescript-ar">
-  <ActionBar title="NativeScript AR 3"></ActionBar>
+  <ActionBar title="NativeScript AR"></ActionBar>
 
-  <GridLayout rows="auto, *" columns="*">
+  <GridLayout>
     <AR:AR
-        row="1"
-        debugLevel="FEATURE_POINTS"
-        planeMaterial="{{ planeMaterial }}"
-        detectPlanes="true"
-        showStatistics="true"
-        planeTapped="onPlaneTapped"
-        arLoaded="onArLoaded"
-    >
+      debugLevel="FEATURE_POINTS"
+      planeMaterial="{{ planeMaterial }}"
+      detectPlanes="true">
     </AR:AR>
-
-    <StackLayout row="1" horizontalAlignment="right" verticalAlignment="bottom">
-      <GridLayout rows="auto" columns="*, 80" horizontalAlignment="right" verticalAlignment="bottom" class="bg-primary toggle-flashlight">
-        <Label text="Flashlight" class="m-x-10 m-t-5" horizontalAlignment="right"/>
-        <Switch id="flashlightSwitch" class="m-t-5" col="1" checked="false"/>
-      </GridLayout>
-    </StackLayout>
   </GridLayout>
 </Page>
